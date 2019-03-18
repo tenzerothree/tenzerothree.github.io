@@ -1,0 +1,11 @@
+/* TEAM */
+	Writer, designer, developer:Chris Ward
+	Contact:chris [at] tenzerothree.com
+	LinkedIn:@tenzerothree
+	From:England, UK
+
+/* SITE */
+	Last update:10/10/2018
+	Language:English[UK]
+	Doctype:HTML5, CSS3, JavaScript, Vue.js
+	IDE:Sublime Text, Adobe Photoshop
