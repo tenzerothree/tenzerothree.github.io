@@ -9,10 +9,31 @@
 		<link rel="author" href="humans.txt" />
 		<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" href="styles.css" />
-		<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
-		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	</head>
 	<body id="top" role="document">
+		<svg xmlns="http://www.w3.org/2000/svg" class="defs">
+			<filter id="pink" color-interpolation-filters="sRGB" x="0" y="0">
+				<feColorMatrix type="matrix"
+					values="0     0 0 0 1
+							1     0 0 0 0
+							0.399 0 0 0 0.601
+							0     0 0 1 0" />
+			</filter>
+			<filter id="yellow" color-interpolation-filters="sRGB" x="0" y="0">
+				<feColorMatrix type="matrix"
+					values="0     0 0 0 1
+							0.266 0 0 0 0.734
+							1     0 0 0 0
+							0     0 0 1 0" />
+			</filter>
+			<filter id="blue" color-interpolation-filters="sRGB" x="0" y="0">
+				<feColorMatrix type="matrix"
+					values="0.797 0 0 0 0.203
+							0.399  0 0 0 0.601
+							0     0 0 0 1
+							0     0 0 1 0" />
+			</filter>
+		</svg>
 		<nav role="banner">
 			<ul role="navigation">
 				<li><a href="#top">Ten Zero Three</a></li>
@@ -30,8 +51,7 @@
 				<div class="offset">
 					<main>
 						<h1 class="sub">Chris Ward</h1>
-						<p>TEN ZERO THREE is the portfolio of Chris Ward Bsc (Hons). I am a front-end developer, UI/UX designer, and graphic designer who is skilled in HTML, CSS, JavaScript and generally making things look pretty on the internet.</p>
-						<!-- <p>Below you can find out <a href="">about me</a>, about <a href="">my work</a> and <a href="">skills</a>, or <a href="">how to contact me</a>.</p> -->
+						<p>TEN ZERO THREE is the portfolio of Chris Ward Bsc (Hons). I am a front-end developer, UI/UX designer, and graphic designer who is skilled in JavaScript, CSS, HTML and generally making things look pretty on the internet.</p>
 					</main>
 					<img src="imgs/circle-me.jpg" alt="Portrait of the author" />
 				</div>
@@ -48,38 +68,13 @@
 					</main>
 					<img src="imgs/circle-html.jpg" alt="Screenshot of HTML code" />
 				</div>
-				<svg xmlns="http://www.w3.org/2000/svg" class="defs">
-					<filter id="pink" color-interpolation-filters="sRGB" x="0" y="0">
-						<feColorMatrix type="matrix"
-							values="0     0 0 0 1
-									1     0 0 0 0
-									0.399 0 0 0 0.601
-									0     0 0 1 0" />
-					</filter>
-					<filter id="yellow" color-interpolation-filters="sRGB" x="0" y="0">
-						<feColorMatrix type="matrix"
-							values="0     0 0 0 1
-									0.266 0 0 0 0.734
-									1     0 0 0 0
-									0     0 0 1 0" />
-					</filter>
-					<filter id="blue" color-interpolation-filters="sRGB" x="0" y="0">
-						<feColorMatrix type="matrix"
-							values="0.797 0 0 0 0.203
-									0.399  0 0 0 0.601
-									0     0 0 0 1
-									0     0 0 1 0" />
-					</filter>
-				</svg>
 				<div id="logos"></div>
 				<div class="offset">
-					<img src="imgs/circle-ui.jpg" alt="Screenshot of Adobe Photoshop interface"" />
+					<img src="imgs/circle-ui.jpg" alt="Screenshot of Adobe Photoshop interface" />
 					<main>
 						<h4 class="sub">Design</h4>
 						<p>Designing for the web isn't just a matter of putting a logo above a navigation bar and then organising ever smaller boxes below it. The numerous ways that a web site might be seen and the different way you might interact with it has let us think about how we design sites in a whole new way. Responsive designs and the ehole mobile first approach is a real paradigm shift. This is, in my opinion, a very, VERY good thing and adds to the fun. Who likes things simple eh?</p>
-						<!-- <p>I've done a good amount of designing for the not internet too; kid's super hero pyjamas, board game rule books, posters for a rock venue, an internationally syndicated monthly magazine, a full branding suite for an independent florist. In the end it's all shapes, text and space.</p> -->
 						<p>And remember friends don't let friends design websites in InDesign.</p>
-						<!-- <p>Software: Adobe Photoshop, Adobe Illustrator, Adobe InDesign, Sketch</p> -->
 					</main>
 				</div>
 			</section>
