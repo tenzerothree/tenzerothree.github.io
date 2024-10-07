@@ -33,7 +33,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font: 18px/1.8em "Source Sans Pro", roboto, verdana, sans-serif;
+  font: 18px/1.6em "Source Sans Pro", roboto, verdana, sans-serif;
   color: #000;
   background: #fff;
   text-align: left;
@@ -171,7 +171,7 @@ section div main .sub {
   margin: 0 0 24px;
 }
 section div main p {
-  margin: 0 0 8px;
+  margin: 0 0 16px;
 }
 section div main ul {
   margin: 0 0 16px;
