@@ -7,6 +7,7 @@
 html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, select, p, blockquote, th, td, article, aside, .modal, figcaption, figure, footer, header, hgroup, menu, nav, section {
   margin: 0;
   padding: 0;
+  font-style: none;
 }
 fieldset, img, a img {
   border: 0;
@@ -27,12 +28,12 @@ sup, sub {
 article, aside, .modal, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
-/*--- TENZEROTHREE.com v9.1 ---*/
+/*--- TENZEROTHREE.com v9.2 ---*/
 html {
   scroll-behavior: smooth;
 }
 body {
-  font: 15px/25px "Source Sans Pro", roboto, verdana, sans-serif;
+  font: 18px/1.8em "Source Sans Pro", roboto, verdana, sans-serif;
   color: #000;
   background: #fff;
   text-align: left;
@@ -58,6 +59,19 @@ a:hover, a:active, a:focus {
 }
 li {
   list-style: none;
+}
+#services li {
+  list-style: unset;
+  list-style-position: inside;
+}
+dfn {
+  font-style: normal;
+}
+strong {
+  font-weight: 600;
+}
+p:last-of-type strong, p:first-of-type strong {
+  font-weight: 700;
 }
 a.antispam {
   unicode-bidi: bidi-override;
@@ -135,11 +149,11 @@ section:nth-of-type(4) header {
 }
 section div {
   margin: 48px auto 96px;
-  max-width: 800px;
+  max-width: 1024px;
   display: flex;
 }
 section div img {
-  align-self: center;
+  align-self: flex-start;
   flex: 0 0 auto;
   width: calc(50% - 16px);
   margin: 0 16px;
@@ -151,13 +165,16 @@ section div main {
   text-align: right;
 }
 section div main .sub {
-  font: 600 22px/1.1em "D-Din", Helvetica, Arial, sans-serif;
+  font: 600 26px/1.1em "D-Din", Helvetica, Arial, sans-serif;
   border-bottom: 3px solid #000;
   display: inline-block;
-  margin: 0 0 16px;
+  margin: 0 0 24px;
 }
 section div main p {
   margin: 0 0 8px;
+}
+section div main ul {
+  margin: 0 0 16px;
 }
 section div main:last-child {
   text-align: left;
@@ -167,23 +184,23 @@ section div.offset main {
   width: inherit;
 }
 section div.offset img {
-  width: 192px;
+  width: 200px;
   border-radius: 50%;
   overflow: hidden;
 }
 section #logos {
   padding: 0 8px;
   max-width: 1024px;
-  margin: 0 auto 96px;
+  margin: 48px auto 96px;
   display: grid;
   justify-content: space-between;
-  grid-template-columns: repeat(auto-fill, minmax(8%, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(12%, 1fr));
   grid-row-gap: 16px;
   grid-column-gap: 16px;
 }
 section #logos img {
   width: 100%;
-  cursor: pointer;
+/*  cursor: pointer;*/
   margin: 0;
   filter: none;
   transition: filter 0.3s;
@@ -208,7 +225,7 @@ section #logos img:nth-of-type(3n):hover {
     filter: sepia(100%) hue-rotate(170deg) brightness(103%);
   }
 }
-@keyframes modalIn {
+/*@keyframes modalIn {
   from {
     top: 40%;
     opacity: 0;
@@ -309,7 +326,7 @@ section #logos img:nth-of-type(3n):hover {
 .modal.blue a:hover {
   color: #fff;
   background: #39f;
-}
+}*/
 @media all and (min-width: 1281px) {
   section header {
     background-position: 50% 60%;
@@ -353,13 +370,17 @@ section #logos img:nth-of-type(3n):hover {
   section div {
     display: block;
   }
-  section div main, section div.offset main {
+  section div main, section div.offset main, section div main:last-child {
     width: inherit;
     max-width: 100%;
     padding: 0 16px;
   }
   section div img, section div.offset img {
     display: none;
+  }
+  section#top div.offset img {
+    margin: 0 auto 48px;
+    display: block;
   }
   section div#logos img {
     display: initial;

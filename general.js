@@ -1,7 +1,7 @@
 const logos = [
 	{ imgSrc: "accenture", modalCopy: "Designed and developed national and international graduate recruitment microsites, emails and ad banners", modalLink: "https://www.accenture.com/", name: "Accenture" },
 	{ imgSrc: "aeg", modalCopy: "Designed and developed a series of microsites", modalLink: "https://www.aeg.co.uk/", name: "AEG" },
-	{ imgSrc: "andra", modalCopy: "Complete e&#8209;commerce site design and frontend build", modalLink: "http://shop.andrajewels.com/", name: "Andra" },
+	// { imgSrc: "andra", modalCopy: "Complete e&#8209;commerce site design and frontend build", modalLink: "http://shop.andrajewels.com/", name: "Andra" },
 	{ imgSrc: "angloamerican", modalCopy: "Designed and built online corporate report", modalLink: "https://www.angloamerican.com/", name: "Anglo American" },
 	{ imgSrc: "argos", modalCopy: "Designed microsites for Chinese expansion", modalLink: "https://www.argos.co.uk/", name: "Argos" },
 	{ imgSrc: "armypainter", modalCopy: "Designed packaging, displays and booklets", modalLink: "https://www.thearmypainter.com/", name: "The Army Painter" },
@@ -11,8 +11,9 @@ const logos = [
 	{ imgSrc: "bastyan", modalCopy: "Designed and developed their global site", modalLink: "http://www.bastyan.co.uk/", name: "Bastyan" },
 	{ imgSrc: "barclays", modalCopy: "Designed and developed a series of microsites, emails and ad banners", modalLink: "https://www.barclays.co.uk/", name: "Barclays" },
 	{ imgSrc: "bcs", modalCopy: "Designed and developed a series of microsites", modalLink: "https://www.bcs.org/", name: "BCS" },
-	{ imgSrc: "bluestrust", modalCopy: "Logo design", modalLink: "https://www.bluestrust.org/", name: "Blues Trust" },
+	// { imgSrc: "bluestrust", modalCopy: "Logo design", modalLink: "https://www.bluestrust.org/", name: "Blues Trust" },
 	{ imgSrc: "boots", modalCopy: "Designed, developed and managed premium microsites", modalLink: "https://www.boots.com/", name: "Boots" },
+	{ imgSrc: "cambridge", modalCopy: "", modalLink: "", name: "University of Cambridge" },
 	{ imgSrc: "cartenoire", modalCopy: "Designed and developed ad banners", modalLink: "http://www.cartenoire.co.uk/", name: "Carte Noire" },
 	{ imgSrc: "chase", modalCopy: "Designed and developed national and international graduate recruitment microsites", modalLink: "https://www.chase.com/", name: "Chase" },
 	{ imgSrc: "citibank", modalCopy: "Designed and developed national and international graduate recruitment microsites", modalLink: "https://www.citibank.co.uk/", name: "CitiBank" },
@@ -29,6 +30,7 @@ const logos = [
 	{ imgSrc: "grey", modalCopy: "Designed and developed global intranet with Box integration", modalLink: "http://grey.com/london/", name: "Grey" },
 	{ imgSrc: "hotels", modalCopy: "Designed an ad banner campaign", modalLink: "https://www.hotels.com/", name: "Hotels.com" },
 	{ imgSrc: "ihg", modalCopy: "Designed and developed a series of microsites", modalLink: "https://www.ihg.com/", name: "IHG" },
+	{ imgSrc: "inditex", modalCopy: "", modalLink: "", name: "Inditex" },
 	{ imgSrc: "johnlewis", modalCopy: "Lead replatforming and system integration project", modalLink: "https://www.johnlewis.com/", name: "John Lewis" },
 	{ imgSrc: "jones", modalCopy: "Redesign and build site navigation", modalLink: "https://www.jonesbootmaker.com/", name: "Jones Bootmaker" },
 	{ imgSrc: "jpmorgan", modalCopy: "Designed and developed national and international graduate recruitment microsites", modalLink: "https://www.jpmorgan.com/", name: "JP Morgan" },
@@ -43,11 +45,13 @@ const logos = [
 	{ imgSrc: "nandos", modalCopy: "Designed and developed ad banners", modalLink: "https://www.nandos.com.au/", name: "Nandos Australia" },
 	{ imgSrc: "newlook", modalCopy: "Designed and developed their global site", modalLink: "https://www.newlook.com/", name: "New Look" },
 	{ imgSrc: "ncc", modalCopy: "Designed and developed interactive map microsite", modalLink: "https://www.nottinghamcity.gov.uk/", name: "Nottingham City Council" },
+	{ imgSrc: "nestle", modalCopy: "", modalLink: "", name: "Nestle" },
 	{ imgSrc: "networkrail", modalCopy: "Designed and developed a series of microsites, emails and ad banners", modalLink: "https://www.networkrail.co.uk/", name: "Network Rail" },
-	{ imgSrc: "o2", modalCopy: "Designed and developed HTML 5 ad banners", modalLink: "https://www.o2.co.uk/", name: "O2" },
+	// { imgSrc: "o2", modalCopy: "Designed and developed HTML 5 ad banners", modalLink: "https://www.o2.co.uk/", name: "O2" },
 	{ imgSrc: "oasis", modalCopy: "Designed and developed their global site", modalLink: "http://www.oasis-stores.com/", name: "Oasis" },
 	{ imgSrc: "orange", modalCopy: "Designed and developed microsite and HTML 5 ad banners", modalLink: "https://ee.co.uk/", name: "Orange" },
 	{ imgSrc: "peugeot", modalCopy: "Designed and developed a series of microsites", modalLink: "https://www.peugeot.co.uk/", name: "Peugeot" },
+	{ imgSrc: "reckitt", modalCopy: "", modalLink: "", name: "Reckitt" },
 	{ imgSrc: "royalmail", modalCopy: "Designed and developed a series of microsites, emails and ad banners", modalLink: "https://www.royalmail.com/", name: "Royal Mail" },
 	{ imgSrc: "selfridges", modalCopy: "Designed and developed their global site", modalLink: "https://www.selfridges.com/", name: "Selfridges" },
 	{ imgSrc: "servis", modalCopy: "Designed and developed a series of microsites and ad banners", modalLink: "http://servis.co.uk/", name: "Servis" },
@@ -83,10 +87,16 @@ function callModal( i ) {
 		</div>
 	</div>`
 }
+// logos.forEach( ( logo, index ) => {
+// 	document.getElementById('logos').innerHTML += `<img
+// 		src="imgs/logo/${logo.imgSrc}.gif"
+// 		alt="${logo.name}"
+// 		onClick="callModal('${index}')"
+// 	></img>`
+// } )
 logos.forEach( ( logo, index ) => {
 	document.getElementById('logos').innerHTML += `<img
 		src="imgs/logo/${logo.imgSrc}.gif"
 		alt="${logo.name}"
-		onClick="callModal('${index}')"
 	></img>`
 } )
