@@ -28,7 +28,7 @@ sup, sub {
 article, aside, .modal, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
-/*--- TENZEROTHREE.com v9.2.2 ---*/
+/*--- TENZEROTHREE.com v9.2.3 ---*/
 html {
   scroll-behavior: smooth;
 }
@@ -113,10 +113,12 @@ nav a:link, nav a:visited, nav a:hover, nav a:active, nav a:focus, footer a:link
   text-decoration: none;
 }
 nav {
+  font-family: "D-Din", Helvetica, Arial, sans-serif;
   position: fixed;
   top: 0;
   z-index: 9;
   text-transform: uppercase;
+  font-weight: 600;
 }
 footer {
   font-size: 11px;
@@ -217,11 +219,8 @@ section #logos span img {
   width: 100%;
   margin: 0;
   filter: url(#pink);
-  animation-name: twinkle;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
+  animation: twinkle 15s infinite;
   opacity: 0;
-/*  transition: opacity 0.3s;*/
 }
 section #logos span:nth-of-type(3n-1) img {
   filter: url(#yellow);
@@ -233,6 +232,44 @@ section #logos span:nth-of-type(3n) img {
   0%   {opacity: 0;}
   10%   {opacity: 1;}
   20%  {opacity: 0;}
+}
+a.clients {
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+  padding: 3px 20px 4px 10px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 16px;
+  display: inline-block;
+}
+a.clients span {
+  border-radius: 10px;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 4px 2px 0;
+  transition: all 0.4s;
+}
+.clients.open span {
+  background: #f09;
+  animation: pulse 2s infinite;
+}
+a.clients:hover {
+  background: #f09;
+}
+.clients.open:hover span {
+  background: #000;
+  animation: pulse-black 2s infinite;
+}
+@keyframes pulse {
+  0%   {box-shadow: 0 0 0 0px rgba(255, 0, 153, 0.8)}
+  100%  {box-shadow: 0 0 0 24px rgba(255, 0, 153, 0)}
+}
+@keyframes pulse-black {
+  0%   {box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.4)}
+  100%  {box-shadow: 0 0 0 24px rgba(0, 0, 0, 0)}
 }
 @media all and (min-width: 1281px) {
   section header {
