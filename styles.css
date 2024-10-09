@@ -28,7 +28,7 @@ sup, sub {
 article, aside, .modal, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
-/*--- TENZEROTHREE.com v9.2 ---*/
+/*--- TENZEROTHREE.com v9.2.2 ---*/
 html {
   scroll-behavior: smooth;
 }
@@ -56,6 +56,14 @@ a:hover, a:active, a:focus {
   background: #f09;
   color: #fff;
   outline: none;
+}
+a.headshot {
+  background: none;
+  padding: 0;
+  height: 200px;
+}
+a.headshot:hover {
+  filter: url(#pink);
 }
 li {
   list-style: none;
@@ -130,8 +138,11 @@ section header {
   background-size: cover;
   margin: 0 auto;
 }
+section#top header {
+  height: calc( 50vh + 30px );
+}
 section header > * {
-  font: 600 60px/1em "D-Din", Helvetica, Arial, sans-serif;
+  font: 600 80px/1em "D-Din", Helvetica, Arial, sans-serif;
   color: #fff;
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
   margin-top: -25%;
@@ -198,135 +209,31 @@ section #logos {
   grid-row-gap: 16px;
   grid-column-gap: 16px;
 }
-section #logos img {
+section #logos span {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section #logos span img {
   width: 100%;
-/*  cursor: pointer;*/
   margin: 0;
-  filter: none;
-  transition: filter 0.3s;
-}
-section #logos img:hover {
   filter: url(#pink);
+  animation-name: twinkle;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+/*  transition: opacity 0.3s;*/
 }
-section #logos img:nth-of-type(3n-1):hover {
+section #logos span:nth-of-type(3n-1) img {
   filter: url(#yellow);
 }
-section #logos img:nth-of-type(3n):hover {
+section #logos span:nth-of-type(3n) img {
   filter: url(#blue);
 }
-@-moz-document url-prefix() {
-  section #logos img:hover {
-    filter: sepia(100%) hue-rotate(275deg) brightness(103%);
-  }
-  section #logos img:nth-of-type(3n-1):hover {
-    filter: sepia(100%) brightness(106%);
-  }
-  section #logos img:nth-of-type(3n):hover {
-    filter: sepia(100%) hue-rotate(170deg) brightness(103%);
-  }
+@keyframes twinkle {
+  0%   {opacity: 0;}
+  10%   {opacity: 1;}
+  20%  {opacity: 0;}
 }
-/*@keyframes modalIn {
-  from {
-    top: 40%;
-    opacity: 0;
-  } to {
-    top: 50%;
-    opacity: 1;
-  }
-}
-.modalback, .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 8;
-  background: rgba(0, 0, 0, 0.5);
-}
-.modal {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  height: initial;
-  z-index: 9;
-  max-width: 330px;
-  animation-name: modalIn;
-  animation-duration: 0.6s;
-}
-.modal h5 {
-  background: #f09;
-  font: 600 22px/1.1em "D-Din", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  padding: 12px 8px;
-  text-align: center;
-  color: #fff;
-  letter-spacing: 1px;
-  position: relative;
-}
-.modal h5 img {
-  width: 16px;
-  position: absolute;
-  top: 50%;
-  right: 16px;
-  cursor: pointer;
-  transform: translateY(-50%);
-}
-.modal h5 img:hover {
-  opacity: 0.5;
-}
-.modal p {
-  padding: 4px 16px 12px;
-}
-.modal a {
-  padding: 4px 16px;
-  border-top: 1px solid rgba(255, 0, 153, 0.2);
-  background: rgba(255, 0, 153, 0.2);
-  color: #f09;
-  display: block;
-  text-decoration: none;
-  font-size: 13px;
-  border-radius: 0;
-}
-.modal a::after {
-  content: '\25ba';
-  font-size: 10px;
-  padding-left: 0.5em;
-  opacity: 0.8;
-}
-.modal a:hover {
-  color: #fff;
-  background: #f09;
-}
-.modal > img {
-  width: 120px;
-  display: block;
-  margin: 16px auto 8px;
-}
-.modal.yellow h5 {
-  background: #fb0;
-}
-.modal.yellow a {
-  border-top: 1px solid rgba(255, 187, 0, 0.2);
-  background: rgba(255, 187, 0, 0.1);
-  color: #fb0;
-}
-  .modal.yellow a:hover {
-  color: #fff;
-  background: #fb0;
-}
-.modal.blue h5 {
-  background: #39f;
-}
-.modal.blue a {
-  border-top: 1px solid rgba(51, 153, 255, 0.2);
-  background: rgba(51, 153, 255, 0.1);
-  color: #39f;
-}
-.modal.blue a:hover {
-  color: #fff;
-  background: #39f;
-}*/
 @media all and (min-width: 1281px) {
   section header {
     background-position: 50% 60%;

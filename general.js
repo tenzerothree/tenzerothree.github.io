@@ -73,30 +73,10 @@ const logos = [
 	{ imgSrc: "yotel", modalCopy: "Designed and developed main site", modalLink: "https://www.yotel.com/", name: "Yotel" },
 	{ imgSrc: "123-reg", modalCopy: "Designed and developed their global site", modalLink: "https://www.123-reg.co.uk/", name: "123-Reg" }
 ]
-function callModal( i ) {
-	const logo = logos[i]
-	const colors = ['pink', 'blue', 'yellow']
-	const randColor = colors[ (Math.random() * colors.length) << 0 ]
-	document.body.classList='stop'
-	document.getElementById('modal').innerHTML += `<div class="modalback" onClick="this.outerHTML='';document.body.classList='';">
-		<div class="modal ${randColor}">
-			<h5>${logo.name}<img src="imgs/cross.svg" alt="close button" /></h5>
-			<img src="imgs/logo/${logo.imgSrc}.gif" alt="${logo.name}" />
-			<p>${logo.modalCopy}</p>
-			<a href="${logo.modalLink}" target="_blank">${logo.modalLink}</a>
-		</div>
-	</div>`
-}
-// logos.forEach( ( logo, index ) => {
-// 	document.getElementById('logos').innerHTML += `<img
-// 		src="imgs/logo/${logo.imgSrc}.gif"
-// 		alt="${logo.name}"
-// 		onClick="callModal('${index}')"
-// 	></img>`
-// } )
 logos.forEach( ( logo, index ) => {
-	document.getElementById('logos').innerHTML += `<img
+	document.getElementById('logos').innerHTML += `<span style="background-image:url('imgs/logo/${logo.imgSrc}.gif')"><img
 		src="imgs/logo/${logo.imgSrc}.gif"
+		style="animation-delay: ${Math.floor(Math.random() * 15) + 1}s;"
 		alt="${logo.name}"
-	></img>`
+	></img></span>`
 } )
