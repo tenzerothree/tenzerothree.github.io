@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400");
-@import url("hkgrotesk.css");
+@font-face {
+  font-family: hkgrotesk;
+  src: url("HKGrotesk-Black.otf") format("opentype");
+  font-weight:800;
+  font-style:normal;
+}
 * {
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
