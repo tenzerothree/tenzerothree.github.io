@@ -1,8 +1,0 @@
-@font-face {
-  font-family:'D-Din';
-  src:url('D-DIN-Bold.woff2') format('woff2'),
-      url('D-DIN-Bold.woff') format('woff'),
-      url('D-DIN-Bold.ttf')  format('truetype');
-  font-weight:600;
-  font-style:normal;
-}
