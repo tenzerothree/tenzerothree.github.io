@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
+@import url("https: //fonts.googleapis.com/css?family=Source+Sans+Pro:200");
 * {
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
@@ -25,7 +25,7 @@ sup, sub {
 article, aside, .modal, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
-/*--- TENZEROTHREE.com v10.1.0 ---*/
+/*--- TENZEROTHREE.com v10.1.1 ---*/
 html {
   scroll-behavior: smooth;
 }
@@ -36,9 +36,9 @@ body {
   background: #111;
   text-align: left;
   overflow-x: hidden;
-  margin:24px 0;
+  margin: 24px 0;
 }
-::selection {
+: : selection {
   color: #fff;
   background: #f09;
 }
@@ -84,7 +84,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active, nav a:focus, footer a:link
   border: none;
 }
 section:not(#contact) ul {
-  margin-left:24px;
+  margin-left: 24px;
 }
 li {
   list-style-type: circle;
@@ -112,35 +112,35 @@ section#syndicateroom img {
 section#gallery img {
   filter: none;
   height: 480px;
-  display:inline-block;
+  display: inline-block;
 }
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
   line-height: 1.2em;
   font-weight: 300;
-  margin:0.3em 0 0.6em;
+  margin: 0.3em 0 0.6em;
 }
 h1 {
-  font-size:3em;
+  font-size: 3em;
 }
 .casestudy h1 {
   margin-bottom: 0;
 }
 h2 {
-  font-size:2em;
+  font-size: 2em;
 }
 .casestudy h2 {
   margin-top: 0.5em;
 }
 h3 {
-  font-size:1.5em;
+  font-size: 1.5em;
 }
 section {
-  padding:36px 24px;
+  padding: 36px 24px;
   border-bottom: 0.2px solid #ccc;
 }
 body > div {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
 }
 div section {
@@ -152,7 +152,7 @@ div section {
 p, ul {
   margin: 0 0 1em;
 }
-p:last-of-type {
+p: last-of-type {
   margin: 0;
 }
 span:nth-of-type(3n+1) {
@@ -178,6 +178,17 @@ section#contact {
 @media all and (max-width: 800px) {
   body {
     font-size: 18px;
+    margin: 12px 0;
+  }
+  nav, footer {
+    width: calc( 100% - 24px );
+    padding: 0 12px;
+  }
+  section {
+    padding: 36px 12px;
+  }
+  nav ul{
+    /*display: block;*/
   }
   div section {
     width: 100%;
