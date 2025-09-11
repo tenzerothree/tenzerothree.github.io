@@ -25,7 +25,7 @@ sup, sub {
 article, aside, .modal, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
-/*--- TENZEROTHREE.com v10.0.1 ---*/
+/*--- TENZEROTHREE.com v10.1.0 ---*/
 html {
   scroll-behavior: smooth;
 }
@@ -121,19 +121,19 @@ h1, h2, h3, h4, h5, h6 {
   margin:0.3em 0 0.6em;
 }
 h1 {
-  font-size:72px;
+  font-size:3em;
 }
 .casestudy h1 {
   margin-bottom: 0;
 }
 h2 {
-  font-size:48px;
+  font-size:2em;
 }
 .casestudy h2 {
   margin-top: 0.5em;
 }
 h3 {
-  font-size:36px;
+  font-size:1.5em;
 }
 section {
   padding:36px 24px;
@@ -176,7 +176,13 @@ section#contact {
   }
 }
 @media all and (max-width: 800px) {
+  body {
+    font-size: 18px;
+  }
   div section {
     width: 100%;
+  }
+  section#contact {
+    background: none;
   }
 }
