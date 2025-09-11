@@ -25,7 +25,7 @@ sup, sub {
 article, aside, .modal, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
-/*--- TENZEROTHREE.com v10.0 ---*/
+/*--- TENZEROTHREE.com v10.0.1 ---*/
 html {
   scroll-behavior: smooth;
 }
@@ -94,6 +94,9 @@ section#contact li {
 }
 a.headshot {
   border: none;
+}
+a.headshot:hover, a.headshot:active, a.headshot:focus {
+  background: none;
 }
 img {
   height: 144px;
