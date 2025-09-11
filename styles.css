@@ -99,7 +99,7 @@ a.headshot:hover, a.headshot:active, a.headshot:focus {
   background: none;
 }
 img {
-  height: 144px;
+  height: 6em;
   filter: grayscale(100%);
 }
 section#top img {
