@@ -12,6 +12,29 @@
 		<script src="https://darkvisitors.com/tracker.js?project_key=1ff160b9-71e7-4ae8-9e47-d79674d46a2b"></script>
 	</head>
 	<body id="top" role="document">
+		<svg xmlns="http://www.w3.org/2000/svg" class="defs">
+			<filter id="pink" color-interpolation-filters="sRGB" x="0" y="0">
+				<feColorMatrix type="matrix"
+					values="0     0 0 0 1
+							1     0 0 0 0
+							0.399 0 0 0 0.601
+							0     0 0 1 0" />
+			</filter>
+			<filter id="yellow" color-interpolation-filters="sRGB" x="0" y="0">
+				<feColorMatrix type="matrix"
+					values="0     0 0 0 1
+							0.266 0 0 0 0.734
+							1     0 0 0 0
+							0     0 0 1 0" />
+			</filter>
+			<filter id="blue" color-interpolation-filters="sRGB" x="0" y="0">
+				<feColorMatrix type="matrix"
+					values="0.797 0 0 0 0.203
+							0.399  0 0 0 0.601
+							0     0 0 0 1
+							0     0 0 1 0" />
+			</filter>
+		</svg>
 		<nav role="banner">
 			<ul role="navigation">
 				<li><a href="#top">Chris Ward&emsp;·&emsp;Cambridge, UK</a></li>
@@ -22,34 +45,36 @@
 			<header>
 				<a href="https://linkedin.com/in/tenzerothree" class="headshot" taget="_blank"><img class="headshot" src="imgs/me.jpg" alt="Portrait of the author" /></a>
 				<h1>Hi. I'm Chris – </h1>
-				<h2>a <span>UX</span>, <span>UI</span> and <span>product designer</span> with over 20 years of experience, dedicated to designing digital experiences that feel <span>intuitive</span>, <span>inspiring</span>, and <span>genuinely human</span>.</h3>
+				<h2>Drawing on <span>20+ years</span> of <span>frontend</span> and <span>UX/UI</span> experience, I turn complex problems into interfaces that are <span>intuitive</span>, <span>beautiful</span>, and <span>genuinely human</span>.</h3>
+				<h2>I craft digital experiences that <span>resonate</span>.</h2>
 			<header>
 		</section>
 		<div>
 			<section id="risilience">
 				<img src="imgs/risilience.png" alt="Risilience logo" />
 				<h3>Most recently I worked with Risilience</h3>
-				<p>Redesigning dashboards to turn complex climate risk data into actionable insights.</p>
+				<p>Transformed climate risk data into actionable insights with high-performance, responsive dashboards that inspire user action.</p>
 				<p><a href="/risilience">View case study &#8594;</a></p>
 			</section>
 			<section id="syndicateroom">
 				<img src="imgs/syndicateroom.png" alt="SyndicateRoom logo" />
 				<h3>Before that I worked with SyndicateRoom</h3>
-				<p>Designing scalable investment journeys that grow funds and retain investors.</p>
+				<p>Shaped scalable investment journeys, combining design and frontend code to grow funds and keep investors confident.</p>
 				<p><a href="/syndicateroom">View case study &#8594;</a></p>
 			</section>
 			<section id="freelance">
 				<img src="imgs/pentool.svg" alt="Vector pen tool illustration" />
-				<h3>And before that I spent a decade as a freelancer</h3>
-				<p>Crafting user-centered digital experiences and production-ready interfaces for major UK and international brands.</p>
+				<h3>And before that, I spent a decade freelancing</h3>
+				<p>Built user-centered digital experiences for UK and international brands, turning ideas into seamless, production-ready interfaces.</p>
 				<p><a href="https://linkedin.com/in/tenzerothree" target="_blank">See full list on LinkedIn &#8594;</a></p>
 			</section>
 			<section id="hobbies">
 				<img src="imgs/paint.svg" alt="Paint and paintbrush icon" />
-				<h3>Outside of work, I spend a lot of time creating a mess with paint</h3>
-				<p>Up a bouldering wall, exploring the countryside on my fixie, mending other peoples bikes or plucking my bass (badly).</p>
+				<h3>Outside of work, I tinker and explore</h3>
+				<p>Messing with paint, climbing bouldering walls, cycling the countryside on my fixie, fixing bikes, or plucking my bass (badly, but with joy).</p>
 			</section>
 		</div>
+		<section id="logos"></section>
 		<section id="contact">
 			<h3>Contact me</h4>
 			<ul>
@@ -71,5 +96,6 @@
 				<li><a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">(ɔ) Chris Ward 2025</a>. Illustrations courtesy of the very talented <a href="https://thenounproject.com/creator/carolinemackay/" target="_blank">Caroline Mackay</a>.</li>
 			</ul>
 		</footer>
+		<script src="general.js"></script>
 	</body>
 </html>
