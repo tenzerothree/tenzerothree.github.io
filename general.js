@@ -73,10 +73,13 @@ const logos = [
   { imgSrc: "yotel", modalCopy: "Designed and developed main site", modalLink: "https://www.yotel.com/", name: "Yotel" },
   { imgSrc: "123-reg", modalCopy: "Designed and developed their global site", modalLink: "https://www.123-reg.co.uk/", name: "123-Reg" }
 ]
-logos.forEach( ( logo, index ) => {
-  document.getElementById('logos').innerHTML += `<span style="background-image:url('imgs/logo/${logo.imgSrc}.png')">
-  <img src="imgs/logo_dark/${logo.imgSrc}.png"
-    style="animation-delay: ${Math.floor(Math.random() * 15) + 1}s;"
-    alt="${logo.name}"
-></img></span>`
-} )
+const logosHTML = logos.map(({ imgSrc, name }) => `
+  <span style="background-image: url('imgs/logo/${imgSrc}.png')">
+    <img
+      src="imgs/logo_dark/${imgSrc}.png"
+      style="animation-delay: ${Math.floor(Math.random() * 15) + 1}s"
+      alt="${name}"
+    />
+  </span>
+`).join('')
+document.getElementById('logos').innerHTML = logosHTML
