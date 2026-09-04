@@ -1,4 +1,10 @@
-@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:200";
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("fonts/source-sans-pro-200-latin.woff2") format("woff2");
+}
 * {
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
