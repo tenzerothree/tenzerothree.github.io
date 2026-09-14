@@ -1,18 +1,21 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en-gb">
 	<head>
 		<meta charset="utf-8" />
-		<title>Chris Ward's portfolio – UI development and UX/UI product design – TEN ZERO THREE</title>
-		<meta name="description" content="TEN ZERO THREE is the portfolio of frontend developer, UI/UX designer and graphic designer Chris Ward." />
-		<meta name="keywords" content="web design, UI designer, UX designer, frontend development, front-end developer, graphic design, product designer, portfolio" />
+		<title>Chris Ward's portfolio – UI/UX-rooted engineering leader – TEN ZERO THREE</title>
+		<meta name="description" content="TEN ZERO THREE is the portfolio of Chris Ward, a UI/UX-rooted engineering leader with 20+ years building digital products and the teams that build them." />
+		<meta name="keywords" content="engineering leader, VP of engineering, head of engineering, UI/UX design, frontend development, product engineering, portfolio" />
 		<link rel="shortcut icon" href="imgs/favicon.ico" />
 		<link rel="author" href="humans.txt" />
 		<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="preload" href="fonts/source-sans-pro-200-latin.woff2" as="font" type="font/woff2" crossorigin />
 		<link rel="stylesheet" href="styles.css" />
 		<script src="https://darkvisitors.com/tracker.js?project_key=1ff160b9-71e7-4ae8-9e47-d79674d46a2b"></script>
 	</head>
-	<body id="top" role="document">
-		<svg xmlns="http://www.w3.org/2000/svg" class="defs">
+	<body id="top">
+		<svg xmlns="http://www.w3.org/2000/svg" class="defs" aria-hidden="true">
 			<filter id="pink" color-interpolation-filters="sRGB" x="0" y="0">
 				<feColorMatrix type="matrix"
 					values="0     0 0 0 1
@@ -35,72 +38,50 @@
 							0     0 0 1 0" />
 			</filter>
 		</svg>
-		<nav role="banner">
-			<ul role="navigation">
-				<li><a href="#top">Chris Ward&emsp;·&emsp;Cambridge, UK</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
+		{% include nav.html %}
 		<section id="top">
 			<header>
-				<a href="https://linkedin.com/in/tenzerothree" class="headshot" taget="_blank"><img class="headshot" src="imgs/me.jpg" alt="Portrait of the author" /></a>
+				<a href="https://linkedin.com/in/tenzerothree" class="headshot" target="_blank" rel="noopener noreferrer"><img class="headshot" src="imgs/me.jpg" alt="Chris Ward on LinkedIn" /><span class="sr-only"> (opens in new tab)</span></a>
 				<h1>Hi. I'm Chris – </h1>
-				<h2>Drawing on <span>20+ years</span> of <span>design</span> and <span>engineering</span> experience, I turn complex problems into interfaces that are <span>intuitive</span>, <span>beautiful</span>, and <span>genuinely human</span>.</h3>
-				<h2>I craft digital experiences that <span>resonate</span>.</h2>
-			<header>
+				<h2>With <span>20+ years</span> across <span>design</span> and <span>engineering</span>, I turn complex products into ones that ship, scale, and actually work for people.</h2>
+				<h2>I build teams that build things that <span>resonate</span>.</h2>
+				<p><a href="/about" class="arrow-link">More about me{% include forward-arrow.svg %}</a></p>
+			</header>
 		</section>
 		<div>
-			<section id="tbc">
-				<img src="imgs/phone.svg" alt="Generic phone illustration" />
-				<h3>Working on a new and exciting project</h3>
-				<p>Watch this space ;)</p>
+			<section id="memorify">
+				<img src="imgs/phone.svg" alt="" />
+				<h3>Right now, I'm VP of Engineering at Memorify</h3>
+				<p>Founding team member on an AI-powered memory preservation product, leading engineering and shaping the roadmap alongside the CEO and CXO.</p>
+				<p><a href="/memorify" class="arrow-link">View case study{% include forward-arrow.svg %}</a></p>
 			</section>
 			<section id="risilience">
-				<img src="imgs/risilience.png" alt="Risilience logo" />
-				<h3>Previously, I worked with Risilience</h3>
-				<p>Transformed climate risk data into actionable insights with high-performance, responsive dashboards that inspire user action.</p>
-				<p><a href="/risilience">View case study &#8594;</a></p>
+				<img src="imgs/risilience.png" alt="" />
+				<h3>Before that, I led design and frontend at Risilience</h3>
+				<p>Built and led the design and frontend team, turning climate risk data into accessible dashboards – lifting customer satisfaction by 46% and self-service by 22%.</p>
+				<p><a href="/risilience" class="arrow-link">View case study{% include forward-arrow.svg %}</a></p>
 			</section>
 			<section id="syndicateroom">
-				<img src="imgs/syndicateroom.png" alt="SyndicateRoom logo" />
-				<h3>Before that I worked with SyndicateRoom</h3>
-				<p>Shaped scalable investment journeys, combining design and frontend code to grow funds and keep investors confident.</p>
-				<p><a href="/syndicateroom">View case study &#8594;</a></p>
+				<img src="imgs/syndicateroom.png" alt="" />
+				<h3>Before that, I was Head of Tech at SyndicateRoom</h3>
+				<p>Grew the team from 2 to 6 and rebuilt investment journeys for 2,000+ investors, helping take the fund from zero to £77M with 76% investor retention.</p>
+				<p><a href="/syndicateroom" class="arrow-link">View case study{% include forward-arrow.svg %}</a></p>
 			</section>
 			<section id="freelance">
-				<img src="imgs/pentool.svg" alt="Vector pen tool illustration" />
+				<img src="imgs/pentool.svg" alt="" />
 				<h3>And before that, I spent a decade freelancing</h3>
-				<p>Built user-centered digital experiences for UK and international brands, turning ideas into seamless, production-ready interfaces.</p>
-				<p><a href="https://linkedin.com/in/tenzerothree" target="_blank">See full list on LinkedIn &#8594;</a></p>
+				<p>Built user-centred digital products and design systems for UK and international brands, including Selfridges and Which?.</p>
+				<p><a href="https://linkedin.com/in/tenzerothree" target="_blank" rel="noopener noreferrer" class="arrow-link">See full list on LinkedIn{% include external-arrow.svg %}<span class="sr-only"> (opens in new tab)</span></a></p>
 			</section>
 			<section id="hobbies">
-				<img src="imgs/paint.svg" alt="Paint and paintbrush icon" />
+				<img src="imgs/paint.svg" alt="" />
 				<h3>Outside of work, I tinker and explore</h3>
-				<p>Messing with paint, climbing bouldering walls, cycling the countryside, fixing bikes, or making loud noises on my bass or drums (both badly, but with a smile on my face).</p>
+				<p>Messing with paint, climbing walls, cycling the countryside, fixing bikes, making loud noises on my bass or drums (both badly, but with a smile on my face), or souldering resistors into PCBs.</p>
 			</section>
 		</div>
 		<section id="logos"></section>
-		<section id="contact">
-			<h3>Contact me</h4>
-			<ul>
-				<li>Email: <a href="mailto:chris@tenzerothree.com" class="antispam">moc.eerhtoreznet@sirhc</a></li>
-				<li>Telephone: <a href="tel:+447842760662">+44 (0) 784 276 0662</a></li>
-			</ul>
-			<ul>
-				<li>FaceTime: <a href="facetime:chris@tenzerothree.com">chris@tenzerothree.com</a></li>
-				<li>Signal: <a href="https://signal.me/#eu/6QGv9w4T0SQFEdA10zJMrbPQXtRrSyfUYTtkq46q4HNtBokxooFBrbA5wb20UUjS">@tenzerothree.65</a></li>
-			</ul>
-			<ul>
-				<li>LinkedIn: <a href="https://linkedin.com/in/tenzerothree" target="_blank">tenzerothree</a></li>
-				<li>GitHub: <a href="https://github.com/tenzerothree" target="_blank">tenzerothree</a></p></li>
-			</ul>
-			<p translate="no">Je parle français 🇫🇷<br />og jeg snakker litt norsk 🇳🇴<br />and love working with clients from all over the world 🌍</p>
-		</section>
-		<footer role="contentinfo">
-			<ul>
-				<li><a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">(ɔ) Chris Ward 2025</a>. Illustrations courtesy of the very talented <a href="https://thenounproject.com/creator/carolinemackay/" target="_blank">Caroline Mackay</a>.</li>
-			</ul>
-		</footer>
+		{% include contact.html %}
+		{% include footer.html %}
 		<script src="general.js"></script>
 	</body>
 </html>

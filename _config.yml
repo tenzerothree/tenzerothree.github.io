@@ -1,0 +1,4 @@
+exclude:
+  - README.md
+  - CLAUDE.md
+  - ChrisWardSelectedPortfolio.zip

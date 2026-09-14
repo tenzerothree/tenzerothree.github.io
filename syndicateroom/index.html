@@ -1,80 +1,64 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en-gb">
 	<head>
 		<meta charset="utf-8" />
-		<title>Case study: SyndicateRoom – Chris Ward's portfolio – UI development and UX/UI product design – TEN ZERO THREE</title>
-		<meta name="description" content="TEN ZERO THREE is the portfolio of frontend developer, UI/UX designer and graphic designer Chris Ward." />
-		<meta name="keywords" content="web design, UI designer, UX designer, frontend development, front-end developer, graphic design, product designer, portfolio" />
+		<title>Case study: SyndicateRoom – Chris Ward's portfolio – UI/UX-rooted engineering leader – TEN ZERO THREE</title>
+		<meta name="description" content="TEN ZERO THREE is the portfolio of Chris Ward, a UI/UX-rooted engineering leader with 20+ years building digital products and the teams that build them." />
+		<meta name="keywords" content="engineering leader, VP of engineering, head of engineering, UI/UX design, frontend development, product engineering, portfolio" />
 		<link rel="author" href="/humans.txt" />
 		<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="preload" href="/fonts/source-sans-pro-200-latin.woff2" as="font" type="font/woff2" crossorigin />
 		<link rel="stylesheet" href="/styles.css" />
 		<script src="https://darkvisitors.com/tracker.js?project_key=1ff160b9-71e7-4ae8-9e47-d79674d46a2b"></script>
 	</head>
-	<body id="top" role="document">
-		<nav role="banner">
-			<ul role="navigation">
-				<li><a href="/">Chris Ward&emsp;·&emsp;Cambridge, UK</a></li>
-				<li><a href="/#contact">Contact</a></li>
-			</ul>
-		</nav>
+	<body id="top">
+		{% include nav.html %}
 		<section id="syndicateroom" class="casestudy">
 			<header>
-				<img src="/imgs/syndicateroom.png" alt="SyndicateRoom logo" />
+				<img src="/imgs/syndicateroom.png" alt="" />
 				<h1>SyndicateRoom</h1>
-				<a href="https://www.syndicateroom.com/">https://www.syndicateroom.com/</a>
-				<h2>Designing scalable investment journeys with UX + Frontend development</h2>
-				<p>At SyndicateRoom, I led both design and development, delivering modular dashboards and investment flows for thousands of investors. By integrating user research, journey mapping, reusable UX/UI patterns, and production-ready frontend components, we created a system that supported rapid growth and improved retention, taking the fund from zero to £77M deployed.</p>
-				<p><a href="/">&#8592; Back</a></p>
-			<header>
+				<a href="https://www.syndicateroom.com/" target="_blank" rel="noopener noreferrer" class="arrow-link">https://www.syndicateroom.com/{% include external-arrow.svg %}<span class="sr-only"> (opens in new tab)</span></a>
+				<h2>Head of Tech, June 2019 – June 2023</h2>
+				<p>At SyndicateRoom I led design and development together, rebuilding the investment journeys and dashboards used by 2,000+ investors. I grew the team from 2 to 6, led the migration to microservices, and built a modular component library that cut delivery cycles by 30% – contributing to a fund that grew from zero to £77M with 76% investor retention.</p>
+				<p><a href="/" class="arrow-link">{% include back-arrow.svg %}Back</a></p>
+			</header>
 		</section>
 		<div>
 			<section>
 				<h3>Problem</h3>
 				<ul>
-					<li>No structured design system.</li>
-					<li>Investment process was inconsistent and hard to navigate.</li>
-					<li>Needed scalable flows to support rapid growth.</li>
-					<li>Legacy monolithic codebase.</li>
+					<li>Investment journeys were inconsistent and hard to navigate.</li>
+					<li>No structured design system, and a legacy monolithic codebase slowed every change.</li>
+					<li>The team needed to scale fast to keep pace with fund growth.</li>
 				</ul>
 			</section>
 			<section>
-				<h3>Process</h3>
+				<h3>What I did</h3>
 				<ul>
-					<li>Research: Stakeholder interviews, personas, journey mapping.</li>
-					<li>Design: Wireframes, prototypes, iterative usability testing.</li>
-					<li>System: Modular dashboards, investment flow patterns, component library.</li>
-					<li>Development: Built React/TypeScript modular components and templates on a microservice foundation for performance and maintainability.</li>
-					<li>Team Growth: Expanded from 2 → 6, mentoring designers &amp; developers.</li>
-				</ul>
-			</section>
-			<section>
-				<h3>Solution</h3>
-				<ul>
-					<li>Designed dashboards for 2,000+ investors using a modular, reusable frontend system.</li>
-					<li>Created a component library to standardize UI and reduce dev time for new flows.</li>
-					<li>Implemented a structured mentorship program to accelerate developer upskilling.</li>
+					<li>Grew the design and development team from 2 to 6, mentoring juniors through to senior and lead roles.</li>
+					<li>Led the migration from a legacy monolith to microservices.</li>
+					<li>Rebuilt the investment flows and dashboards for 2,000+ investors, designing directly in Vue.js and React.</li>
+					<li>Built a modular component library that standardised the UI and cut delivery cycles by 30%.</li>
 				</ul>
 			</section>
 			<section>
 				<h3>Impact</h3>
 				<ul>
-					<li>Grew fund from scratch to £77M deployed.</li>
-					<li>Achieved 76% customer retention.</li>
-					<li>Reduced development time for new flows by standardizing reusable components, scaling team efficiency.</li>
+					<li>Fund grew from zero to £77M deployed, with 76% investor retention.</li>
+					<li>30% reduction in delivery cycles from the component library.</li>
+					<li>Team grew from 2 to 6, with a mentoring structure that took juniors to senior and lead level.</li>
 				</ul>
 			</section>
 		</div>
 		<section id="gallery">
 			<h3>Limited gallery</h3>
 			<p>For more details on my work at SyndicateRoom, please, <a href="/#contact">get in touch</a>.</p>
-			<img src="/imgs/sr1.jpg" />
-			<img src="/imgs/sr2.jpg" />
-			<p><a href="/">&#8592; Back</a></p>
+			<img src="/imgs/sr1.jpg" alt="SyndicateRoom investment dashboard" />
+			<img src="/imgs/sr2.jpg" alt="SyndicateRoom investment flow screen" />
+			<p><a href="/" class="arrow-link">{% include back-arrow.svg %}Back</a></p>
 		</section>
-		<footer role="contentinfo">
-			<ul>
-				<li><a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">(ɔ) Chris Ward 2025</a>. Illustrations courtesy of the very talented <a href="https://thenounproject.com/creator/carolinemackay/" target="_blank">Caroline Mackay</a>.</li>
-			</ul>
-		</footer>
+		{% include footer.html %}
 	</body>
 </html>

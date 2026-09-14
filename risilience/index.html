@@ -1,80 +1,67 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en-gb">
 	<head>
 		<meta charset="utf-8" />
-		<title>Case study: Risilience – Chris Ward's portfolio – UI development and UX/UI product design – TEN ZERO THREE</title>
-		<meta name="description" content="TEN ZERO THREE is the portfolio of frontend developer, UI/UX designer and graphic designer Chris Ward." />
-		<meta name="keywords" content="web design, UI designer, UX designer, frontend development, front-end developer, graphic design, product designer, portfolio" />
+		<title>Case study: Risilience – Chris Ward's portfolio – UI/UX-rooted engineering leader – TEN ZERO THREE</title>
+		<meta name="description" content="TEN ZERO THREE is the portfolio of Chris Ward, a UI/UX-rooted engineering leader with 20+ years building digital products and the teams that build them." />
+		<meta name="keywords" content="engineering leader, VP of engineering, head of engineering, UI/UX design, frontend development, product engineering, portfolio" />
 		<link rel="author" href="/humans.txt" />
 		<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="preload" href="/fonts/source-sans-pro-200-latin.woff2" as="font" type="font/woff2" crossorigin />
 		<link rel="stylesheet" href="/styles.css" />
 		<script src="https://darkvisitors.com/tracker.js?project_key=1ff160b9-71e7-4ae8-9e47-d79674d46a2b"></script>
 	</head>
-	<body id="top" role="document">
-		<nav role="banner">
-			<ul role="navigation">
-				<li><a href="/">Chris Ward&emsp;·&emsp;Cambridge, UK</a></li>
-				<li><a href="/#contact">Contact</a></li>
-			</ul>
-		</nav>
+	<body id="top">
+		{% include nav.html %}
 		<section id="risilience" class="casestudy">
 			<header>
-				<img src="/imgs/risilience.png" alt="Risilience logo" />
+				<img src="/imgs/risilience.png" alt="" />
 				<h1>Risilience</h1>
-				<a href="https://risilience.com/">https://risilience.com/</a>
-				<h2>Designing accessible dashboards for climate risk data with frontend scalability</h2>
-				<p>At Risilience, I led the design and frontend teams to create accessible, user-friendly dashboards for enterprise clients. Combining UX research with scalable frontend architecture, we transformed dense datasets into intuitive interfaces that improved usability, accessibility, and customer satisfaction across the platform.</p>
-				<p><a href="/">&#8592; Back</a></p>
-			<header>
+				<a href="https://risilience.com/" target="_blank" rel="noopener noreferrer" class="arrow-link">https://risilience.com/{% include external-arrow.svg %}<span class="sr-only"> (opens in new tab)</span></a>
+				<h2>UI &amp; UX Lead, June 2023 – July 2025</h2>
+				<p>I built and led the design and frontend team at Risilience – one designer and two developers – and turned dense climate risk data into dashboards enterprise clients could actually use. Customer satisfaction rose 46% and self-service rose 22%, off the back of a component library and style guide that brought every product up to WCAG 2.2 compliance.</p>
+				<p><a href="/" class="arrow-link">{% include back-arrow.svg %}Back</a></p>
+			</header>
 		</section>
 		<div>
 			<section>
 				<h3>Problem</h3>
 				<ul>
-					<li>Dashboards were difficult to navigate.</li>
-					<li>Accessibility compliance was lacking.</li>
-					<li>No design system or scalable UI components existed.</li>
+					<li>Dashboards were difficult to navigate, and dense climate risk data wasn't landing with users.</li>
+					<li>No design system or scalable UI components existed, so every screen was built from scratch.</li>
+					<li>Accessibility compliance was lacking across the platform.</li>
 				</ul>
 			</section>
 			<section>
-				<h3>Process</h3>
+				<h3>What I did</h3>
 				<ul>
-					<li>User Research: Stakeholder workshops, client interviews, personas.</li>
-					<li>Prototyping: Wireframes, journey maps, iterative usability testing.</li>
-					<li>Design System: Component library, style guide, React/TypeScript dashboards, cross-platform consistency.</li>
-					<li>Accessibility: WCAG 2.2 compliance built into every release.</li>
-				</ul>
-			</section>
-			<section>
-				<h3>Solution</h3>
-				<ul>
-					<li>Redesigned dashboards with interactive charts and reusable component library (50+ elements).</li>
-					<li>Developed a frontend system for rapid updates, scalability, and maintainability.</li>
-					<li>Led team in visual storytelling, turning complex climate datasets into actionable insights.</li>
+					<li>Built and led the design and frontend team – one designer, two developers – from scratch.</li>
+					<li>Ran client interviews, stakeholder workshops, personas, and journey mapping to ground the redesign in real usage.</li>
+					<li>Developed a reusable component library and style guide, built in React and TypeScript, that brought every product up to WCAG 2.2 compliance.</li>
+					<li>Redesigned the dashboards with interactive charts and visualisations that turned complex datasets into actionable insight.</li>
 				</ul>
 			</section>
 			<section>
 				<h3>Impact</h3>
 				<ul>
-					<li>+22% increase in customer self-service.</li>
-					<li>+46% increase in customer satisfaction.</li>
-					<li>Built and led design + frontend team from scratch, standardizing components and improving dev efficiency across the platform.</li>
+					<li>46% increase in customer satisfaction.</li>
+					<li>22% increase in customer self-service.</li>
+					<li>WCAG 2.2 compliance achieved across all products.</li>
+					<li>Standardised component library cut design-to-dev handoff time and improved consistency platform-wide.</li>
 				</ul>
 			</section>
 		</div>
 		<section id="gallery">
 			<h3>Limited gallery</h3>
 			<p>For more details on my work at Risilience, please, <a href="/#contact">get in touch</a>.</p>
-			<img src="/imgs/ris1.jpg" />
-			<img src="/imgs/ris2.jpg" />
-			<img src="/imgs/ris3.jpg" />
-			<img src="/imgs/ris4.jpg" />
-			<p><a href="/">&#8592; Back</a></p>
+			<img src="/imgs/ris1.jpg" alt="Risilience dashboard screen showing climate risk data visualisations" />
+			<img src="/imgs/ris2.jpg" alt="Risilience dashboard screen showing a data table view" />
+			<img src="/imgs/ris3.jpg" alt="Risilience component library and style guide" />
+			<img src="/imgs/ris4.jpg" alt="Risilience dashboard on a mobile viewport" />
+			<p><a href="/" class="arrow-link">{% include back-arrow.svg %}Back</a></p>
 		</section>
-		<footer role="contentinfo">
-			<ul>
-				<li><a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">(ɔ) Chris Ward 2025</a>. Illustrations courtesy of the very talented <a href="https://thenounproject.com/creator/carolinemackay/" target="_blank">Caroline Mackay</a>.</li>
-			</ul>
-		</footer>
+		{% include footer.html %}
 	</body>
 </html>
